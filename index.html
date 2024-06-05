@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для відправлення e-mail</title>
+</head>
+<body>
+    <h1>Відправити повідомлення на e-mail</h1>
+    <form id="emailForm" action="mailto:example@example.com" method="post" enctype="text/plain">
+        <label for="email">Ваша e-mail адреса:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="subject">Тема:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
